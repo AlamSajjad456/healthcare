@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Insights | Trusted Medical Information</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-heartbeat text-3xl text-blue-600 mr-2"></i>
+                <h1 class="text-2xl font-bold text-gray-800">HealthCare Insights</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-blue-600 font-medium">Home</a>
+                <a href="#articles" class="text-gray-600 hover:text-blue-600">Articles</a>
+                <a href="#categories" class="text-gray-600 hover:text-blue-600">Categories</a>
+                <a href="#news" class="text-gray-600 hover:text-blue-600">News</a>
+                <a href="#experts" class="text-gray-600 hover:text-blue-600">Experts</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-600">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <div class="flex flex-col space-y-4">
+                <a href="#" class="text-blue-600 font-medium">Home</a>
+                <a href="#articles" class="text-gray-600 hover:text-blue-600">Articles</a>
+                <a href="#categories" class="text-gray-600 hover:text-blue-600">Categories</a>
+                <a href="#news" class="text-gray-600 hover:text-blue-600">News</a>
+                <a href="#experts" class="text-gray-600 hover:text-blue-600">Experts</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600">About</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">Reliable Health Articles for Every Day!</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto animate-fade-in" style="animation-delay: 0.2s;">
+                Trusted medical information from healthcare professionals to help you make informed decisions about your health.
+            </p>
+            <div class="animate-fade-in" style="animation-delay: 0.4s;">
+                <a href="#articles" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 inline-block mr-4">
+                    Read Our Latest Article
+                </a>
+                <a href="#newsletter" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300 inline-block">
+                    Subscribe to Newsletter
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Bar -->
+    <div class="container mx-auto px-4 -mt-8 mb-12">
+        <div class="max-w-2xl mx-auto bg-white p-4 rounded-lg shadow-lg">
+            <div class="flex">
+                <input type="text" placeholder="Search health topics..." class="flex-grow px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button class="bg-blue-600 text-white px-6 py-3 rounded-r-lg hover:bg-blue-700 transition-colors duration-300">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Articles -->
+    <section id="articles" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Articles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Mental Health" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-blue-600">Mental Health</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3">10 Ways to Manage Stress During Difficult Times</h3>
+                        <p class="text-gray-600 mb-4">Learn practical techniques to reduce stress and improve your mental wellbeing...</p>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Read More →</a>
+                    </div>
+                </div>
+                <!-- Article 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Nutrition" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-blue-600">Nutrition</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3">The Mediterranean Diet: Benefits and Meal Plan</h3>
+                        <p class="text-gray-600 mb-4">Discover why this diet is consistently ranked as one of the healthiest in the world...</p>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Read More →</a>
+                    </div>
+                </div>
+                <!-- Article 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Fitness" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-blue-600">Fitness</span>
+                        <h3 class="text-xl font-bold mt-2 mb-3">Home Workouts: Stay Fit Without the Gym</h3>
+                        <p class="text-gray-600 mb-4">Effective exercises you can do at home with minimal equipment...</p>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Read More →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300">
+                    View All Articles
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Browse by Category</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <!-- Category 1 -->
+                <a href="#" class="category-card bg-white rounded-lg shadow-md p-6 text-center transition-all duration-300">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-heartbeat text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="font-semibold">General Health</h3>
+                </a>
+                <!-- Category 2 -->
+                <a href="#" class="category-card bg-white rounded-lg shadow-md p-6 text-center transition-all duration-300">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-brain text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="font-semibold">Mental Health</h3>
+                </a>
+                <!-- Category 3 -->
+                <a href="#" class="category-card bg-white rounded-lg shadow-md p-6 text-center transition-all duration-300">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-apple-alt text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="font-semibold">Nutrition</h3>
+                </a>
+                <!-- Category 4 -->
+                <a href="#" class="category-card bg-white rounded-lg shadow-md p-6 text-center transition-all duration-300">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-running text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="font-semibold">Fitness</h3>
+                </a>
+                <!-- Category 5 -->
+                <a href="#" class="category-card bg-white rounded-lg shadow-md p-6 text-center transition-all duration-300">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-flask text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="font-semibold">Medical News</h3>
+                </a>
+                <!-- Category 6 -->
+                <a href="#" class="category-card bg-white rounded-lg shadow-md p-6 text-center transition-all duration-300">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-stethoscope text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="font-semibold">Conditions</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section id="news" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Latest Health News</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- News 1 -->
+                <div class="bg-gray-50 rounded-lg p-6 flex">
+                    <div class="w-24 h-24 bg-blue-100 rounded-lg flex-shrink-0 flex items-center justify-center mr-6">
+                        <i class="fas fa-newspaper text-3xl text-blue-600"></i>
+                    </div>
+                    <div>
+                        <span class="text-sm text-gray-500">June 15, 2023</span>
+                        <h3 class="text-xl font-bold mt-1 mb-2">Breakthrough in Diabetes Treatment Shows Promise</h3>
+                        <p class="text-gray-600">New research reveals potential for more effective management of type 2 diabetes...</p>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800 inline-block mt-3">Read More →</a>
+                    </div>
+                </div>
+                <!-- News 2 -->
+                <div class="bg-gray-50 rounded-lg p-6 flex">
+                    <div class="w-24 h-24 bg-blue-100 rounded-lg flex-shrink-0 flex items-center justify-center mr-6">
+                        <i class="fas fa-newspaper text-3xl text-blue-600"></i>
+                    </div>
+                    <div>
+                        <span class="text-sm text-gray-500">June 10, 2023</span>
+                        <h3 class="text-xl font-bold mt-1 mb-2">WHO Updates Guidelines on Physical Activity</h3>
+                        <p class="text-gray-600">New recommendations emphasize the importance of regular movement for all age groups...</p>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800 inline-block mt-3">Read More →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300">
+                    View All News Updates
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Opinions -->
+    <section id="experts" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Expert Opinions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Expert 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Dr. Sarah Johnson" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-user-md text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Dr. Sarah Johnson</h4>
+                                <p class="text-sm text-gray-600">Cardiologist</p>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Heart Health: Prevention is Key</h3>
+                        <p class="text-gray-600 mb-4">Cardiologist Dr. Johnson shares essential tips for maintaining a healthy heart at any age...</p>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Read Interview →</a>
+                    </div>
+                </div>
+                <!-- Expert 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Dr. Michael Chen" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-user-md text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Dr. Michael Chen</h4>
+                                <p class="text-sm text-gray-600">Nutrition Specialist</p>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Debunking Common Nutrition Myths</h3>
+                        <p class="text-gray-600 mb-4">Nutritionist Dr. Chen separates fact from fiction in popular diet trends...</p>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Read Article →</a>
+                    </div>
+                </div>
+                <!-- Expert 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Dr. Lisa Park" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-user-md text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Dr. Lisa Park</h4>
+                                <p class="text-sm text-gray-600">Psychiatrist</p>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Managing Anxiety in Uncertain Times</h3>
+                        <p class="text-gray-600 mb-4">Psychiatrist Dr. Park offers professional advice for coping with anxiety...</p>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+                    <h2 class="text-3xl font-bold mb-6">About HealthCare Insights</h2>
+                    <p class="text-gray-600 mb-4">
+                        Founded in 2020, HealthCare Insights is dedicated to providing reliable, up-to-date health information to the public. 
+                        Our mission is to empower individuals to make informed decisions about their health and wellbeing.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        All our content is reviewed by medical professionals and sourced from reputable medical journals, research studies, 
+                        and healthcare institutions. We believe in delivering accurate information without sensationalism.
+                    </p>
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h3 class="font-bold text-lg mb-3">Our Team</h3>
+                        <p class="text-gray-600 mb-4">
+                            Our team includes doctors, nurses, health journalists, and medical researchers committed to bringing you the 
+                            most current and trustworthy health information.
+                        </p>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800">Meet Our Team →</a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Healthcare team" class="w-full rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Stay Updated with Health News</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Subscribe to our newsletter and receive the latest health articles, research updates, and expert advice directly to your inbox.
+            </p>
+            <div class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l-lg focus:outline-none text-gray-800">
+                <button class="bg-blue-800 px-6 py-3 rounded-r-lg hover:bg-blue-900 transition-colors duration-300">
+                    Subscribe
+                </button>
+            </div>
+            <p class="text-sm mt-4">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
+                    <h3 class="text-xl font-bold mb-4">Get in Touch</h3>
+                    <p class="text-gray-600 mb-6">
+                        Have questions or feedback? We'd love to hear from you. Fill out the form or use the contact information below.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-blue-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p class="text-gray-600">info@healthcareinsights.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt text-blue-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold">Phone</h4>
+                                <p class="text-gray-600">(800) 555-1234</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold">Address</h4>
+                                <p class="text-gray-600">123 Health Street, Medical City, MC 12345</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-bold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-blue-100 w-10 h-10 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-200">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-blue-100 w-10 h-10 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-200">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-blue-100 w-10 h-10 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-200">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-blue-100 w-10 h-10 rounded-full flex items-center justify-center text-blue-600 hover:bg-blue-200">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <form class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300 w-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto">
+                <!-- FAQ 1 -->
+                <div class="mb-6 border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-bold mb-3">Is the information on this website medically reviewed?</h3>
+                    <p class="text-gray-600">
+                        Yes, all our content is reviewed by qualified healthcare professionals before publication. We source our information from reputable medical journals, research studies, and healthcare institutions.
+                    </p>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="mb-6 border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-bold mb-3">How often is the content updated?</h3>
+                    <p class="text-gray-600">
+                        We regularly review and update our articles to ensure they reflect the most current medical knowledge and guidelines. Major updates are noted at the top of each article with the date of last review.
+                    </p>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="mb-6 border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-bold mb-3">Can I submit a question to your medical team?</h3>
+                    <p class="text-gray-600">
+                        While we can't provide personal medical advice, we welcome general health questions that could be addressed in future articles. Please use our contact form to submit your questions.
+                    </p>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold mb-3">Is there a cost to access your content?</h3>
+                    <p class="text-gray-600">
+                        No, all our health information is freely available to everyone. We believe access to reliable health information should not be limited by financial barriers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-heartbeat text-2xl text-blue-400 mr-2"></i>
+                        <h3 class="text-xl font-bold">HealthCare Insights</h3>
+                    </div>
+                    <p class="text-gray-400">
+                        Providing trustworthy health information to help you make informed decisions about your wellbeing.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#articles" class="text-gray-400 hover:text-white">Articles</a></li>
+                        <li><a href="#categories" class="text-gray-400 hover:text-white">Categories</a></li>
+                        <li><a href="#news" class="text-gray-400 hover:text-white">Health News</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Health Topics</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Heart Health</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Mental Wellness</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Nutrition Guides</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Fitness Tips</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Preventive Care</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-blue-600">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-blue-400">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-pink-600">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-blue-700">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">
+                        Subscribe to our newsletter for the latest health updates.
+                    </p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2023 HealthCare Insights. All rights reserved.</p>
+                <div class="mt-4">
+                    <a href="#" class="text-sm hover:text-white">Privacy Policy</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="text-sm hover:text-white">Terms of Service</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="text-sm hover:text-white">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
