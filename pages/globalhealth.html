@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Health | Medical News Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <i class="fas fa-heartbeat text-3xl text-blue-600 mr-2"></i>
+                <h1 class="text-2xl font-bold text-gray-800">Medical News Hub</h1>
+            </div>
+            <div class="w-full md:w-1/3">
+                <div class="relative">
+                    <input type="text" placeholder="Search global health news..." 
+                           class="w-full pl-4 pr-10 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button class="absolute right-3 top-2 text-gray-500">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="/index.html" class="text-blue-600 font-medium">Home</a>
+                <a href="/pages/specilist.html" class="text-gray-600 hover:text-blue-600">Specialties</a>
+                <a href="/pages/research.html" class="text-gray-600 hover:text-blue-600">Research</a>
+                <a href="/pages/globalhealth.html" class="text-gray-600 hover:text-blue-600">Global Health</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Global Health Page Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Page Header -->
+        <section class="mb-12">
+            <div class="bg-green-600 rounded-xl p-8 text-white">
+                <h1 class="text-3xl md:text-4xl font-bold mb-4">Global Health Perspectives</h1>
+                <p class="text-lg mb-6 max-w-3xl">
+                    Tracking health challenges and solutions across borders, with updates on pandemics, 
+                    health equity, and international medical collaborations.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-white text-green-600 px-3 py-1 rounded-full text-sm font-medium">Pandemics</span>
+                    <span class="bg-white text-green-600 px-3 py-1 rounded-full text-sm font-medium">Health Equity</span>
+                    <span class="bg-white text-green-600 px-3 py-1 rounded-full text-sm font-medium">Disease Eradication</span>
+                    <span class="bg-white text-green-600 px-3 py-1 rounded-full text-sm font-medium">Climate & Health</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global Health Spotlight -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">Global Health Spotlight</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Spotlight 1 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Vaccination campaign" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded">VACCINATION</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">WHO REPORT</span>
+                            <span class="text-xs text-gray-500">May 24, 2023</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Global Vaccine Coverage Rebounds After Pandemic Disruptions</h3>
+                        <p class="text-gray-600 text-sm mb-4">New data shows immunization programs recovering, but 20 million children still missed basic vaccines in 2022...</p>
+                        <a href="#" class="text-blue-600 text-sm font-medium">Read Full Report</a>
+                    </div>
+                </article>
+
+                <!-- Spotlight 2 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Malaria prevention" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-green-500 text-white text-xs px-2 py-1 rounded">MALARIA</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">GLOBAL FUND</span>
+                            <span class="text-xs text-gray-500">May 22, 2023</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">New Malaria Vaccine Rollout Begins in 12 African Nations</h3>
+                        <p class="text-gray-600 text-sm mb-4">RTS,S vaccine deployment could prevent 40,000-80,000 child deaths annually in high-burden areas...</p>
+                        <a href="#" class="text-blue-600 text-sm font-medium">Read Full Report</a>
+                    </div>
+                </article>
+
+                <!-- Spotlight 3 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Climate change health impacts" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-yellow-500 text-white text-xs px-2 py-1 rounded">CLIMATE</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">UN REPORT</span>
+                            <span class="text-xs text-gray-500">May 20, 2023</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Climate Change Could Reverse 50 Years of Global Health Gains</h3>
+                        <p class="text-gray-600 text-sm mb-4">New projections show increasing threats from heatwaves, vector-borne diseases, and food insecurity...</p>
+                        <a href="#" class="text-blue-600 text-sm font-medium">Read Full Report</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Global Health News -->
+            <section class="lg:w-2/3">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold text-gray-800">Global Health Updates</h2>
+                    <div class="flex space-x-2">
+                        <button class="px-3 py-1 bg-blue-600 text-white rounded-md text-sm">All</button>
+                        <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300">Americas</button>
+                        <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300">Africa</button>
+                        <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300">Asia</button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                    <!-- Update 1 -->
+                    <article class="p-5 border-b hover:bg-gray-50 transition-colors">
+                        <div class="flex flex-col md:flex-row md:items-center gap-4">
+                            <div class="md:w-1/4">
+                                <span class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">EMERGENCY</span>
+                                <span class="text-xs text-gray-500 ml-2">May 24, 2023</span>
+                            </div>
+                            <div class="md:w-2/4">
+                                <h3 class="font-bold text-lg mb-1">WHO Declares End to COVID-19 Global Health Emergency</h3>
+                                <p class="text-gray-600 text-sm">After 3 years, organization transitions to long-term management of the pandemic...</p>
+                            </div>
+                            <div class="md:w-1/4 flex justify-end">
+                                <a href="#" class="text-blue-600 text-sm font-medium whitespace-nowrap">Read More <i class="fas fa-chevron-right ml-1"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Update 2 -->
+                    <article class="p-5 border-b hover:bg-gray-50 transition-colors">
+                        <div class="flex flex-col md:flex-row md:items-center gap-4">
+                            <div class="md:w-1/4">
+                                <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">TUBERCULOSIS</span>
+                                <span class="text-xs text-gray-500 ml-2">May 23, 2023</span>
+                            </div>
+                            <div class="md:w-2/4">
+                                <h3 class="font-bold text-lg mb-1">Drug-Resistant TB Cases Rise 3% Globally in 2022</h3>
+                                <p class="text-gray-600 text-sm">WHO report highlights treatment gaps and need for new diagnostics...</p>
+                            </div>
+                            <div class="md:w-1/4 flex justify-end">
+                                <a href="#" class="text-blue-600 text-sm font-medium whitespace-nowrap">Read More <i class="fas fa-chevron-right ml-1"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Update 3 -->
+                    <article class="p-5 border-b hover:bg-gray-50 transition-colors">
+                        <div class="flex flex-col md:flex-row md:items-center gap-4">
+                            <div class="md:w-1/4">
+                                <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">POLIO</span>
+                                <span class="text-xs text-gray-500 ml-2">May 21, 2023</span>
+                            </div>
+                            <div class="md:w-2/4">
+                                <h3 class="font-bold text-lg mb-1">Global Polio Eradication Initiative Launches New 5-Year Strategy</h3>
+                                <p class="text-gray-600 text-sm">Plan focuses on last endemic countries and outbreak response...</p>
+                            </div>
+                            <div class="md:w-1/4 flex justify-end">
+                                <a href="#" class="text-blue-600 text-sm font-medium whitespace-nowrap">Read More <i class="fas fa-chevron-right ml-1"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Update 4 -->
+                    <article class="p-5 hover:bg-gray-50 transition-colors">
+                        <div class="flex flex-col md:flex-row md:items-center gap-4">
+                            <div class="md:w-1/4">
+                                <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">HEALTH SYSTEMS</span>
+                                <span class="text-xs text-gray-500 ml-2">May 19, 2023</span>
+                            </div>
+                            <div class="md:w-2/4">
+                                <h3 class="font-bold text-lg mb-1">Global Health Workforce Shortage Reaches 15 Million</h3>
+                                <p class="text-gray-600 text-sm">New report calls for urgent investment in health worker training and retention...</p>
+                            </div>
+                            <div class="md:w-1/4 flex justify-end">
+                                <a href="#" class="text-blue-600 text-sm font-medium whitespace-nowrap">Read More <i class="fas fa-chevron-right ml-1"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="mt-6 text-center">
+                    <button class="bg-white border border-blue-600 text-blue-600 px-6 py-2 rounded-md hover:bg-blue-50">
+                        Load More Updates
+                    </button>
+                </div>
+            </section>
+
+            <!-- Global Health Resources -->
+            <aside class="lg:w-1/3">
+                <div class="bg-white p-6 rounded-lg shadow-md sticky top-4">
+                    <h2 class="text-xl font-bold mb-4 text-gray-800 border-b pb-2">Global Health Resources</h2>
+                    
+                    <!-- WHO Resource -->
+                    <div class="mb-6 p-4 bg-blue-50 rounded-lg">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-globe-americas text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">World Health Organization (WHO)</h3>
+                                <p class="text-gray-600 text-sm mb-2">
+                                    Detailed reports, articles, and updates about global health issues including infectious diseases, 
+                                    health policy, and medical advancements.
+                                </p>
+                                <a href="#" class="text-blue-600 text-sm font-medium">Visit WHO Website <i class="fas fa-external-link-alt ml-1 text-xs"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CDC Resource -->
+                    <div class="mb-6 p-4 bg-green-50 rounded-lg">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-shield-virus text-green-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">CDC Global Health</h3>
+                                <p class="text-gray-600 text-sm mb-2">
+                                    Health threats, international health systems, and global disease control initiatives 
+                                    from the Centers for Disease Control and Prevention.
+                                </p>
+                                <a href="#" class="text-blue-600 text-sm font-medium">Visit CDC Global Health <i class="fas fa-external-link-alt ml-1 text-xs"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- GHDx Resource -->
+                    <div class="mb-6 p-4 bg-purple-50 rounded-lg">
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-database text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Global Health Data Exchange (GHDx)</h3>
+                                <p class="text-gray-600 text-sm mb-2">
+                                    Comprehensive database with statistical reports on global health indicators 
+                                    and trends from IHME.
+                                </p>
+                                <a href="#" class="text-blue-600 text-sm font-medium">Visit GHDx <i class="fas fa-external-link-alt ml-1 text-xs"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- UN Resource -->
+                    <div class="mb-6 p-4 bg-yellow-50 rounded-lg">
+                        <div class="flex items-start">
+                            <div class="bg-yellow-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-flag text-yellow-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">UN Global Health</h3>
+                                <p class="text-gray-600 text-sm mb-2">
+                                    Global health goals, climate change health impacts, and disease information 
+                                    from the United Nations.
+                                </p>
+                                <a href="#" class="text-blue-600 text-sm font-medium">Visit UN Health <i class="fas fa-external-link-alt ml-1 text-xs"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Global Fund Resource -->
+                    <div class="p-4 bg-red-50 rounded-lg">
+                        <div class="flex items-start">
+                            <div class="bg-red-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-hand-holding-medical text-red-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-1">Global Fund</h3>
+                                <p class="text-gray-600 text-sm mb-2">
+                                    Global efforts to fight AIDS, Tuberculosis, and Malaria through funding 
+                                    and international collaboration.
+                                </p>
+                                <a href="#" class="text-blue-600 text-sm font-medium">Visit Global Fund <i class="fas fa-external-link-alt ml-1 text-xs"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Global Health Initiatives -->
+        <section class="mt-12 mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">Key Global Health Initiatives</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-syringe text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Vaccine Alliance</h3>
+                    <p class="text-gray-600 text-sm mb-3">Improving vaccine access in low-income countries</p>
+                    <a href="#" class="text-blue-600 text-sm font-medium">Learn More</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
+                    <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-tint text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Clean Water Access</h3>
+                    <p class="text-gray-600 text-sm mb-3">Reducing waterborne diseases worldwide</p>
+                    <a href="#" class="text-blue-600 text-sm font-medium">Learn More</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
+                    <div class="bg-purple-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-female text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Maternal Health</h3>
+                    <p class="text-gray-600 text-sm mb-3">Reducing maternal mortality in developing nations</p>
+                    <a href="#" class="text-blue-600 text-sm font-medium">Learn More</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
+                    <div class="bg-red-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-utensils text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Nutrition Programs</h3>
+                    <p class="text-gray-600 text-sm mb-3">Combating malnutrition and food insecurity</p>
+                    <a href="#" class="text-blue-600 text-sm font-medium">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Medical News Hub</h3>
+                    <p class="text-gray-400">Trusted medical news and research updates for healthcare professionals and the public.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Categories</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Cardiology</a></li>
+                        <li><a href="#" class="hover:text-white">Oncology</a></li>
+                        <li><a href="#" class="hover:text-white">Neurology</a></li>
+                        <li><a href="#" class="hover:text-white">Pediatrics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Clinical Trials</a></li>
+                        <li><a href="#" class="hover:text-white">Medical Guidelines</a></li>
+                        <li><a href="#" class="hover:text-white">Drug Approvals</a></li>
+                        <li><a href="#" class="hover:text-white">Global Health</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-800">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">contact@medicalnewshub.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 Medical News Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Specialties | Medical News Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <i class="fas fa-heartbeat text-3xl text-blue-600 mr-2"></i>
+                <h1 class="text-2xl font-bold text-gray-800">Medical News Hub</h1>
+            </div>
+            <div class="w-full md:w-1/3">
+                <div class="relative">
+                    <input type="text" placeholder="Search medical news..." 
+                           class="w-full pl-4 pr-10 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button class="absolute right-3 top-2 text-gray-500">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="../index.html" class="text-blue-600 font-medium">Home</a>
+                <a href="/pages/specilist.html" class="text-gray-600 hover:text-blue-600">Specialties</a>
+                <a href="/pages/research.html" class="text-gray-600 hover:text-blue-600">Research</a>
+                <a href="/pages/globalhealth.html" class="text-gray-600 hover:text-blue-600">Global Health</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Specialties Page Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Page Header -->
+        <section class="mb-12">
+            <div class="bg-blue-600 rounded-xl p-8 text-white">
+                <h1 class="text-3xl md:text-4xl font-bold mb-4">Medical Specialties Hub</h1>
+                <p class="text-lg mb-6 max-w-3xl">
+                    Comprehensive coverage of all major medical specialties with the latest clinical guidelines, 
+                    treatment advances, and specialty-specific research from leading institutions worldwide.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-white text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Clinical Guidelines</span>
+                    <span class="bg-white text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Treatment Advances</span>
+                    <span class="bg-white text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Specialty Research</span>
+                    <span class="bg-white text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Expert Insights</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialties Grid -->
+        <section class="mb-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cardiology -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Cardiology" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-red-500 text-white text-sm px-3 py-1 rounded-full">Cardiology</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Cardiovascular Medicine</h3>
+                        <p class="text-gray-600 mb-4">
+                            Latest research in heart disease, interventional cardiology, electrophysiology, 
+                            and cardiovascular prevention strategies.
+                        </p>
+                        <a href="#" class="text-blue-600 font-medium inline-flex items-center">
+                            Explore News <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Oncology -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Oncology" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-purple-500 text-white text-sm px-3 py-1 rounded-full">Oncology</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Cancer Research & Treatment</h3>
+                        <p class="text-gray-600 mb-4">
+                            Breakthroughs in immunotherapy, targeted therapies, early detection, 
+                            and personalized cancer treatment approaches.
+                        </p>
+                        <a href="#" class="text-blue-600 font-medium inline-flex items-center">
+                            Explore News <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Neurology -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Neurology" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-blue-500 text-white text-sm px-3 py-1 rounded-full">Neurology</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Neurology & Neuroscience</h3>
+                        <p class="text-gray-600 mb-4">
+                            Advances in Alzheimer's, Parkinson's, stroke, multiple sclerosis, 
+                            and other neurological disorders.
+                        </p>
+                        <a href="#" class="text-blue-600 font-medium inline-flex items-center">
+                            Explore News <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pediatrics -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Pediatrics" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-green-500 text-white text-sm px-3 py-1 rounded-full">Pediatrics</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Pediatrics & Child Health</h3>
+                        <p class="text-gray-600 mb-4">
+                            Childhood development, vaccine research, pediatric diseases, 
+                            and innovations in children's healthcare.
+                        </p>
+                        <a href="#" class="text-blue-600 font-medium inline-flex items-center">
+                            Explore News <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Endocrinology -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Endocrinology" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-yellow-500 text-white text-sm px-3 py-1 rounded-full">Endocrinology</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Endocrinology & Diabetes</h3>
+                        <p class="text-gray-600 mb-4">
+                            Diabetes management, obesity research, thyroid disorders, 
+                            and metabolic syndrome breakthroughs.
+                        </p>
+                        <a href="#" class="text-blue-600 font-medium inline-flex items-center">
+                            Explore News <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Psychiatry -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Psychiatry" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-indigo-500 text-white text-sm px-3 py-1 rounded-full">Psychiatry</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Psychiatry & Mental Health</h3>
+                        <p class="text-gray-600 mb-4">
+                            Mental health treatments, neuroscience discoveries, 
+                            and innovations in psychiatric care and therapy.
+                        </p>
+                        <a href="#" class="text-blue-600 font-medium inline-flex items-center">
+                            Explore News <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Specialties List -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">More Medical Specialties</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <a href="#" class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
+                    <i class="fas fa-lungs text-2xl text-blue-500 mb-2"></i>
+                    <h3 class="font-medium">Pulmonology</h3>
+                </a>
+                <a href="#" class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
+                    <i class="fas fa-bone text-2xl text-blue-500 mb-2"></i>
+                    <h3 class="font-medium">Rheumatology</h3>
+                </a>
+                <a href="#" class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
+                    <i class="fas fa-kidneys text-2xl text-blue-500 mb-2"></i>
+                    <h3 class="font-medium">Nephrology</h3>
+                </a>
+                <a href="#" class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
+                    <i class="fas fa-stomach text-2xl text-blue-500 mb-2"></i>
+                    <h3 class="font-medium">Gastroenterology</h3>
+                </a>
+                <a href="#" class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
+                    <i class="fas fa-dna text-2xl text-blue-500 mb-2"></i>
+                    <h3 class="font-medium">Genetics</h3>
+                </a>
+                <a href="#" class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
+                    <i class="fas fa-allergies text-2xl text-blue-500 mb-2"></i>
+                    <h3 class="font-medium">Immunology</h3>
+                </a>
+                <a href="#" class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
+                    <i class="fas fa-procedures text-2xl text-blue-500 mb-2"></i>
+                    <h3 class="font-medium">Surgery</h3>
+                </a>
+                <a href="#" class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow text-center">
+                    <i class="fas fa-eye text-2xl text-blue-500 mb-2"></i>
+                    <h3 class="font-medium">Ophthalmology</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- Specialty Highlights -->
+        <section class="bg-blue-50 rounded-xl p-8 mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">Specialty Highlights</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Discover the most impactful research and news across medical specialties
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded mr-3">HOT TOPIC</span>
+                        <span class="text-xs text-gray-500">May 18, 2023</span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">New Guidelines for Hypertension Management</h3>
+                    <p class="text-gray-600 text-sm mb-3">Cardiology societies release updated recommendations for blood pressure control...</p>
+                    <a href="#" class="text-blue-600 text-sm font-medium">Read More</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded mr-3">BREAKTHROUGH</span>
+                        <span class="text-xs text-gray-500">May 16, 2023</span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">CAR-T Therapy Shows Promise for Solid Tumors</h3>
+                    <p class="text-gray-600 text-sm mb-3">Early clinical trial results demonstrate potential for treating previously resistant cancers...</p>
+                    <a href="#" class="text-blue-600 text-sm font-medium">Read More</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded mr-3">NEW STUDY</span>
+                        <span class="text-xs text-gray-500">May 14, 2023</span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Gut-Brain Axis in Parkinson's Disease</h3>
+                    <p class="text-gray-600 text-sm mb-3">Research reveals microbiome changes may precede neurological symptoms by years...</p>
+                    <a href="#" class="text-blue-600 text-sm font-medium">Read More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Medical News Hub</h3>
+                    <p class="text-gray-400">Trusted medical news and research updates for healthcare professionals and the public.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Categories</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Cardiology</a></li>
+                        <li><a href="#" class="hover:text-white">Oncology</a></li>
+                        <li><a href="#" class="hover:text-white">Neurology</a></li>
+                        <li><a href="#" class="hover:text-white">Pediatrics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Clinical Trials</a></li>
+                        <li><a href="#" class="hover:text-white">Medical Guidelines</a></li>
+                        <li><a href="#" class="hover:text-white">Drug Approvals</a></li>
+                        <li><a href="#" class="hover:text-white">Global Health</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-800">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">contact@medicalnewshub.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 Medical News Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Research | Medical News Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <i class="fas fa-heartbeat text-3xl text-blue-600 mr-2"></i>
+                <h1 class="text-2xl font-bold text-gray-800">Medical News Hub</h1>
+            </div>
+            <div class="w-full md:w-1/3">
+                <div class="relative">
+                    <input type="text" placeholder="Search research articles..." 
+                           class="w-full pl-4 pr-10 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button class="absolute right-3 top-2 text-gray-500">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="/index.html" class="text-blue-600 font-medium">Home</a>
+                <a href="/pages/specilist.html" class="text-gray-600 hover:text-blue-600">Specialties</a>
+                <a href="/pages/research.html" class="text-gray-600 hover:text-blue-600">Research</a>
+                <a href="/pages/globalhealth.html" class="text-gray-600 hover:text-blue-600">Global Health</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Research Page Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Page Header -->
+        <section class="mb-12">
+            <div class="bg-blue-600 rounded-xl p-8 text-white">
+                <h1 class="text-3xl md:text-4xl font-bold mb-4">Medical Research Hub</h1>
+                <p class="text-lg mb-6 max-w-3xl">
+                    Cutting-edge research findings, clinical trials, and scientific breakthroughs 
+                    from leading medical journals and institutions worldwide.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-white text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Peer-Reviewed</span>
+                    <span class="bg-white text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Clinical Trials</span>
+                    <span class="bg-white text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Meta-Analyses</span>
+                    <span class="bg-white text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Case Studies</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Filters -->
+        <section class="mb-8">
+            <div class="bg-white p-4 rounded-lg shadow-sm">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    <h2 class="text-lg font-medium text-gray-800">Filter Research Articles</h2>
+                    <div class="flex flex-wrap gap-3">
+                        <select class="px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-blue-500">
+                            <option>All Specialties</option>
+                            <option>Cardiology</option>
+                            <option>Oncology</option>
+                            <option>Neurology</option>
+                            <option>Pediatrics</option>
+                        </select>
+                        <select class="px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-blue-500">
+                            <option>All Study Types</option>
+                            <option>Randomized Controlled</option>
+                            <option>Cohort Study</option>
+                            <option>Systematic Review</option>
+                            <option>Case-Control</option>
+                        </select>
+                        <select class="px-3 py-2 border rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-blue-500">
+                            <option>All Journals</option>
+                            <option>NEJM</option>
+                            <option>The Lancet</option>
+                            <option>JAMA</option>
+                            <option>BMJ</option>
+                        </select>
+                        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700">
+                            Apply Filters
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Research -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">Featured Research</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Featured Article 1 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a9e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="CRISPR research" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-green-500 text-white text-xs px-2 py-1 rounded">NEW PUBLICATION</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Nature Medicine</span>
+                            <span class="text-xs text-gray-500">May 20, 2023</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">CRISPR-Based Treatment for Sickle Cell Disease Shows 90% Efficacy</h3>
+                        <p class="text-gray-600 text-sm mb-4">Phase 3 clinical trial results demonstrate durable therapeutic effects with minimal side effects...</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">DOI: 10.1038/s41591-023-02345-2</span>
+                            <a href="#" class="text-blue-600 text-sm font-medium">Read Abstract</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Featured Article 2 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Cancer research" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-purple-500 text-white text-xs px-2 py-1 rounded">LANDMARK STUDY</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">NEJM</span>
+                            <span class="text-xs text-gray-500">May 18, 2023</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Novel Combination Therapy Doubles Survival in Metastatic Pancreatic Cancer</h3>
+                        <p class="text-gray-600 text-sm mb-4">Multicenter trial shows significant improvement in progression-free survival compared to standard care...</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">NCT04257448</span>
+                            <a href="#" class="text-blue-600 text-sm font-medium">Read Abstract</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Featured Article 3 -->
+                <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Alzheimer's research" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded">BREAKTHROUGH</span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Science</span>
+                            <span class="text-xs text-gray-500">May 15, 2023</span>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Blood Test Detects Alzheimer's Pathology 15 Years Before Symptoms</h3>
+                        <p class="text-gray-600 text-sm mb-4">Novel biomarker panel achieves 96% accuracy in predicting disease development in longitudinal study...</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">DOI: 10.1126/science.ade3802</span>
+                            <a href="#" class="text-blue-600 text-sm font-medium">Read Abstract</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Latest Research Articles -->
+        <section class="mb-12">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-gray-800">Latest Research Articles</h2>
+                <div class="flex space-x-2">
+                    <button class="px-3 py-1 bg-blue-600 text-white rounded-md text-sm">All</button>
+                    <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300">This Week</button>
+                    <button class="px-3 py-1 bg-gray-200 rounded-md text-sm hover:bg-gray-300">This Month</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <!-- Research Article 1 -->
+                <article class="p-5 border-b hover:bg-gray-50 transition-colors">
+                    <div class="flex flex-col md:flex-row md:items-center gap-4">
+                        <div class="md:w-1/4">
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">RCT</span>
+                            <span class="text-xs text-gray-500 ml-2">JAMA | May 22, 2023</span>
+                        </div>
+                        <div class="md:w-2/4">
+                            <h3 class="font-bold text-lg mb-1">Semaglutide Reduces Cardiovascular Events by 26% in Non-Diabetic Patients</h3>
+                            <p class="text-gray-600 text-sm">SELECT trial demonstrates significant cardiovascular benefits beyond weight loss in patients with obesity...</p>
+                        </div>
+                        <div class="md:w-1/4 flex justify-end">
+                            <a href="#" class="text-blue-600 text-sm font-medium whitespace-nowrap">View Study <i class="fas fa-chevron-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Research Article 2 -->
+                <article class="p-5 border-b hover:bg-gray-50 transition-colors">
+                    <div class="flex flex-col md:flex-row md:items-center gap-4">
+                        <div class="md:w-1/4">
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Meta-Analysis</span>
+                            <span class="text-xs text-gray-500 ml-2">The Lancet | May 21, 2023</span>
+                        </div>
+                        <div class="md:w-2/4">
+                            <h3 class="font-bold text-lg mb-1">Plant-Based Diets Associated With 32% Lower Risk of Cardiovascular Mortality</h3>
+                            <p class="text-gray-600 text-sm">Systematic review of 23 prospective cohort studies with over 1.2 million participants...</p>
+                        </div>
+                        <div class="md:w-1/4 flex justify-end">
+                            <a href="#" class="text-blue-600 text-sm font-medium whitespace-nowrap">View Study <i class="fas fa-chevron-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Research Article 3 -->
+                <article class="p-5 border-b hover:bg-gray-50 transition-colors">
+                    <div class="flex flex-col md:flex-row md:items-center gap-4">
+                        <div class="md:w-1/4">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Cohort Study</span>
+                            <span class="text-xs text-gray-500 ml-2">BMJ | May 20, 2023</span>
+                        </div>
+                        <div class="md:w-2/4">
+                            <h3 class="font-bold text-lg mb-1">Ultra-Processed Food Consumption Linked to 62% Higher Dementia Risk</h3>
+                            <p class="text-gray-600 text-sm">10-year follow-up of UK Biobank participants shows dose-response relationship...</p>
+                        </div>
+                        <div class="md:w-1/4 flex justify-end">
+                            <a href="#" class="text-blue-600 text-sm font-medium whitespace-nowrap">View Study <i class="fas fa-chevron-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Research Article 4 -->
+                <article class="p-5 border-b hover:bg-gray-50 transition-colors">
+                    <div class="flex flex-col md:flex-row md:items-center gap-4">
+                        <div class="md:w-1/4">
+                            <span class="text-xs bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Phase 2 Trial</span>
+                            <span class="text-xs text-gray-500 ml-2">Nature Biotechnology | May 19, 2023</span>
+                        </div>
+                        <div class="md:w-2/4">
+                            <h3 class="font-bold text-lg mb-1">mRNA Vaccine Shows Promise Against Aggressive Brain Tumors</h3>
+                            <p class="text-gray-600 text-sm">Personalized neoantigen vaccine demonstrates immune activation and preliminary efficacy in glioblastoma...</p>
+                        </div>
+                        <div class="md:w-1/4 flex justify-end">
+                            <a href="#" class="text-blue-600 text-sm font-medium whitespace-nowrap">View Study <i class="fas fa-chevron-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Research Article 5 -->
+                <article class="p-5 hover:bg-gray-50 transition-colors">
+                    <div class="flex flex-col md:flex-row md:items-center gap-4">
+                        <div class="md:w-1/4">
+                            <span class="text-xs bg-red-100 text-red-800 px-2 py-1 rounded">Systematic Review</span>
+                            <span class="text-xs text-gray-500 ml-2">Annals of Internal Medicine | May 18, 2023</span>
+                        </div>
+                        <div class="md:w-2/4">
+                            <h3 class="font-bold text-lg mb-1">Digital CBT Equally Effective as Face-to-Face Therapy for Depression</h3>
+                            <p class="text-gray-600 text-sm">Analysis of 76 randomized trials finds comparable outcomes with increased accessibility...</p>
+                        </div>
+                        <div class="md:w-1/4 flex justify-end">
+                            <a href="#" class="text-blue-600 text-sm font-medium whitespace-nowrap">View Study <i class="fas fa-chevron-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="mt-6 text-center">
+                <button class="bg-white border border-blue-600 text-blue-600 px-6 py-2 rounded-md hover:bg-blue-50">
+                    Load More Studies
+                </button>
+            </div>
+        </section>
+
+        <!-- Research Resources -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">Research Resources</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Journal Finder</h3>
+                    <p class="text-gray-600 text-sm mb-4">Discover the most appropriate journals for your research based on impact factor and specialty.</p>
+                    <a href="#" class="text-blue-600 text-sm font-medium">Explore Journals</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Clinical Trial Registry</h3>
+                    <p class="text-gray-600 text-sm mb-4">Search ongoing and completed clinical trials across all medical specialties.</p>
+                    <a href="#" class="text-blue-600 text-sm font-medium">Search Trials</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Research Methodology</h3>
+                    <p class="text-gray-600 text-sm mb-4">Guides and tools for designing robust clinical and preclinical studies.</p>
+                    <a href="#" class="text-blue-600 text-sm font-medium">Learn Methods</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Open Access Data</h3>
+                    <p class="text-gray-600 text-sm mb-4">Public datasets and repositories for secondary analysis and meta-research.</p>
+                    <a href="#" class="text-blue-600 text-sm font-medium">Access Data</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Medical News Hub</h3>
+                    <p class="text-gray-400">Trusted medical news and research updates for healthcare professionals and the public.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Categories</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Cardiology</a></li>
+                        <li><a href="#" class="hover:text-white">Oncology</a></li>
+                        <li><a href="#" class="hover:text-white">Neurology</a></li>
+                        <li><a href="#" class="hover:text-white">Pediatrics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Clinical Trials</a></li>
+                        <li><a href="#" class="hover:text-white">Medical Guidelines</a></li>
+                        <li><a href="#" class="hover:text-white">Drug Approvals</a></li>
+                        <li><a href="#" class="hover:text-white">Global Health</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-800">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">contact@medicalnewshub.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 Medical News Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
