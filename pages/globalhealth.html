@@ -11,19 +11,31 @@
     <!-- Header -->
     <header class="bg-white shadow-md">
         <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
-            <div class="flex items-center mb-4 md:mb-0">
-                <i class="fas fa-heartbeat text-3xl text-blue-600 mr-2"></i>
-                <h1 class="text-2xl font-bold text-gray-800">Medical News Hub</h1>
+            <!-- Logo and Hamburger (mobile only) -->
+            <div class="flex items-center justify-between w-full md:w-auto mb-4 md:mb-0">
+                <div class="flex items-center">
+                    <i class="fas fa-heartbeat text-3xl text-blue-600 mr-2"></i>
+                    <h1 class="text-2xl font-bold text-gray-800">Medical News Hub</h1>
+                </div>
+                
+                <!-- Mobile Hamburger -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-600 ml-4">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
             </div>
+    
+            <!-- Search Bar (unchanged) -->
             <div class="w-full md:w-1/3">
                 <div class="relative">
-                    <input type="text" placeholder="Search global health news..." 
+                    <input type="text" placeholder="Search medical news..." 
                            class="w-full pl-4 pr-10 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <button class="absolute right-3 top-2 text-gray-500">
                         <i class="fas fa-search"></i>
                     </button>
                 </div>
             </div>
+    
+            <!-- Desktop Nav (unchanged) -->
             <nav class="hidden md:flex space-x-6">
                 <a href="/index.html" class="text-blue-600 font-medium">Home</a>
                 <a href="/pages/specilist.html" class="text-gray-600 hover:text-blue-600">Specialties</a>
@@ -31,8 +43,34 @@
                 <a href="/pages/globalhealth.html" class="text-gray-600 hover:text-blue-600">Global Health</a>
             </nav>
         </div>
+    
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-2 flex flex-col">
+                <a href="/index.html" class="py-3 text-blue-600 border-b">Home</a>
+                <a href="/pages/specilist.html" class="py-3 text-gray-600 border-b hover:text-blue-600">Specialties</a>
+                <a href="/pages/research.html" class="py-3 text-gray-600 border-b hover:text-blue-600">Research</a>
+                <a href="/pages/globalhealth.html" class="py-3 text-gray-600 hover:text-blue-600">Global Health</a>
+            </div>
+        </div>
     </header>
-
+    
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = this.querySelector('i');
+            
+            // Toggle menu visibility
+            menu.classList.toggle('hidden');
+            
+            // Toggle icon between bars and X
+            if (menu.classList.contains('hidden')) {
+                icon.classList.replace('fa-times', 'fa-bars');
+            } else {
+                icon.classList.replace('fa-bars', 'fa-times');
+            }
+        });
+    </script>
     <!-- Global Health Page Content -->
     <main class="container mx-auto px-4 py-8">
         <!-- Page Header -->
